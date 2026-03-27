@@ -452,113 +452,115 @@
                                                     functionality while adhering to rigorous timelines and commercial
                                                     constraints requires strategic design mastery and expert
                                                     coordination.</p>
-                                            </div>tent-->
-
-                                            <!--Start Sidebar-->
-                                            <div class="col-xl-4">
-                                                <div class="sidebar">
-                                                    <!--Start Sidebar Single-->
-                                                    <div class="sidebar__single sidebar__category">
-                                                        <h3 class="sidebar__title">Categories</h3>
-
-                                                        <ul class="sidebar__category-list">
-                                                            <li><a class="active"
-                                                                    href="wall-design-and-painting.html">Wall Design &
-                                                                    Painting<span class="icon-left-arrow"></span></a>
-                                                            </li>
-                                                            <li><a href="modular-kitchens.html">Modular Kitchen<span
-                                                                        class="icon-left-arrow"></span></a></li>
-
-                                                        </ul>
-                                                    </div>
-                                                    <!--End Sidebar Single-->
-
-                                                    <!--Start Sidebar Single-->
-                                                    <div class="sidebar__single sidebar__support">
-                                                        <div class="sidebar__support-bg"
-                                                            style="background-image: url(assets/img/project/project-4.jpg);">
-                                                        </div>
-                                                        <div class="sidebar__support__inner text-center">
-                                                            <h2>Looking for Our <br>Company Profile or <br>Brochure?
-                                                            </h2>
-                                                            <p style="color: #fff; margin-bottom: 20px;">
-                                                                Fill out the form below to download our brochure and
-                                                                learn more about our
-                                                                services.
-                                                            </p>
-
-                                                            <!-- Professional Form -->
-                                                            <form id="brochureForm" oninput="validateForm()"
-                                                                style="margin-bottom: 20px;">
-                                                                <input type="text" id="name" placeholder="Your Name"
-                                                                    required
-                                                                    style="width: 85%; padding: 10px; margin-bottom: 10px; border: none; border-radius: 5px;" />
-                                                                <input type="email" id="email" placeholder="Your Email"
-                                                                    required
-                                                                    style="width: 85%; padding: 10px; margin-bottom: 10px; border: none; border-radius: 5px;" />
-                                                                <input type="tel" id="mobile"
-                                                                    placeholder="Your Mobile Number" required
-                                                                    style="width: 85%; padding: 10px; margin-bottom: 10px; border: none; border-radius: 5px;" />
-                                                            </form>
-
-                                                            <!-- Download button -->
-                                                            <div class="btn-box">
-                                                                <a id="downloadBtn" class="thm-btn"
-                                                                    href="./assets/brochure/Company Profile Presentation.pdf"
-                                                                    download="Company-Brochure.pdf">
-                                                                    <span class="txt">DOWNLOAD BROCHURE</span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <script>
-                                                        function validateForm() {
-                                                            const name = document.getElementById("name").value.trim();
-                                                            const email = document.getElementById("email").value.trim();
-                                                            const mobile = document.getElementById("mobile").value.trim();
-                                                            const downloadBtn = document.getElementById("downloadBtn");
-
-                                                            // Updated patterns
-                                                            const emailPattern = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
-                                                            const mobilePattern = /^\d{10}$/;
-
-                                                            if (name !== "" && emailPattern.test(email) && mobilePattern.test(mobile)) {
-                                                                downloadBtn.href = "assets/brochure/Dm proposal";
-                                                                downloadBtn.setAttribute("download", "brochure.pdf");
-                                                                downloadBtn.style.pointerEvents = "auto";
-                                                                downloadBtn.style.opacity = "1";
-                                                                downloadBtn.onclick = null;
-                                                            } else {
-                                                                downloadBtn.href = "#";
-                                                                downloadBtn.removeAttribute("download");
-                                                                downloadBtn.style.pointerEvents = "none";
-                                                                downloadBtn.style.opacity = "0.6";
-                                                                downloadBtn.onclick = () => false;
-                                                            }
-                                                        }
-                                                    </script>
-                                                    <!--End Sidebar Single-->
-
-                                                    <!--Start Sidebar Single-->
-                                                    <div class="sidebar__single sidebar__contact">
-                                                        <div class="sidebar__contact-inner">
-                                                            <div class="icon-box">
-                                                                <span class="icon-phone"></span>
-                                                            </div>
-
-                                                            <div class="text-box">
-                                                                <p>You can call anytime </p>
-                                                                <h4>Free <a href="tel:+919985217217">+919985217217</a>
-                                                                </h4>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <!--End Sidebar Single-->
-                                                </div>
                                             </div>
-                                            <!--End Sidebar-->
+
+
                                         </div>
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Start Sidebar-->
+                    <div class="col-xl-4">
+                        <div class="sidebar">
+                            <!--Start Sidebar Single-->
+                            <div class="sidebar__single sidebar__category">
+                                <h3 class="sidebar__title">Categories</h3>
+
+                                <ul class="sidebar__category-list">
+                                    <li><a class="active" href="wall-design-and-painting.html">Wall Design &
+                                            Painting<span class="icon-left-arrow"></span></a>
+                                    </li>
+                                    <li><a href="modular-kitchens.html">Modular Kitchen<span
+                                                class="icon-left-arrow"></span></a></li>
+
+                                </ul>
+                            </div>
+                            <!--End Sidebar Single-->
+
+                            <!--Start Sidebar Single-->
+                            <div class="sidebar__single sidebar__support">
+                                <div class="sidebar__support-bg"
+                                    style="background-image: url(assets/img/project/project-4.jpg);">
+                                </div>
+                                <div class="sidebar__support__inner text-center">
+                                    <h2>Looking for Our <br>Company Profile or <br>Brochure?
+                                    </h2>
+                                    <p style="color: #fff; margin-bottom: 20px;">
+                                        Fill out the form below to download our brochure and
+                                        learn more about our
+                                        services.
+                                    </p>
+
+                                    <!-- Professional Form -->
+                                    <form id="brochureForm" oninput="validateForm()" style="margin-bottom: 20px;">
+                                        <input type="text" id="name" placeholder="Your Name" required
+                                            style="width: 85%; padding: 10px; margin-bottom: 10px; border: none; border-radius: 5px;" />
+                                        <input type="email" id="email" placeholder="Your Email" required
+                                            style="width: 85%; padding: 10px; margin-bottom: 10px; border: none; border-radius: 5px;" />
+                                        <input type="tel" id="mobile" placeholder="Your Mobile Number" required
+                                            style="width: 85%; padding: 10px; margin-bottom: 10px; border: none; border-radius: 5px;" />
+                                    </form>
+
+                                    <!-- Download button -->
+                                    <div class="btn-box">
+                                        <a id="downloadBtn" class="thm-btn"
+                                            href="./assets/brochure/Company Profile Presentation.pdf"
+                                            download="Company-Brochure.pdf">
+                                            <span class="txt">DOWNLOAD BROCHURE</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <script>
+                                function validateForm() {
+                                    const name = document.getElementById("name").value.trim();
+                                    const email = document.getElementById("email").value.trim();
+                                    const mobile = document.getElementById("mobile").value.trim();
+                                    const downloadBtn = document.getElementById("downloadBtn");
+
+                                    // Updated patterns
+                                    const emailPattern = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
+                                    const mobilePattern = /^\d{10}$/;
+
+                                    if (name !== "" && emailPattern.test(email) && mobilePattern.test(mobile)) {
+                                        downloadBtn.href = "assets/brochure/Dm proposal";
+                                        downloadBtn.setAttribute("download", "brochure.pdf");
+                                        downloadBtn.style.pointerEvents = "auto";
+                                        downloadBtn.style.opacity = "1";
+                                        downloadBtn.onclick = null;
+                                    } else {
+                                        downloadBtn.href = "#";
+                                        downloadBtn.removeAttribute("download");
+                                        downloadBtn.style.pointerEvents = "none";
+                                        downloadBtn.style.opacity = "0.6";
+                                        downloadBtn.onclick = () => false;
+                                    }
+                                }
+                            </script>
+                            <!--End Sidebar Single-->
+
+                            <!--Start Sidebar Single-->
+                            <div class="sidebar__single sidebar__contact">
+                                <div class="sidebar__contact-inner">
+                                    <div class="icon-box">
+                                        <span class="icon-phone"></span>
+                                    </div>
+
+                                    <div class="text-box">
+                                        <p>You can call anytime </p>
+                                        <h4>Free <a href="tel:+919985217217">+919985217217</a>
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--End Sidebar Single-->
+                        </div>
+                    </div>
+                    <!--End Sidebar-->
+                </div>
+            </div>
         </section>
         <!--End Services Details-->
 

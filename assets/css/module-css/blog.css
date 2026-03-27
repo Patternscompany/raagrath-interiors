@@ -125,8 +125,10 @@
 .blog-one__single-content {
     position: relative;
     display: block;
-    padding: 16px 10px ;
-    background-color: rgb(223, 207, 186);
+    padding: 30px;
+    background-color: var(--thm-white);
+    box-shadow: var(--thm-shadow-soft);
+    border-radius: 0 0 var(--thm-border-radius) var(--thm-border-radius);
 }
 
 .blog-one__single-content .meta-info {
@@ -684,7 +686,7 @@
 
 .sidebar__tags-list li {
     position: relative;
-    display: inline-block;
+    display: block;
     float: left;
     padding: 0px 5px 0px;
     margin-bottom: 10px;

@@ -37,6 +37,8 @@
     position: relative;
     display: block;
     overflow: hidden;
+    border-radius: var(--thm-border-radius);
+    box-shadow: var(--thm-shadow-soft);
     z-index: 1;
 }
 

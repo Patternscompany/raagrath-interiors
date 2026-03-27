@@ -46,49 +46,49 @@
 ===============================*/
 :root {
     --thm-font: 'Outfit', sans-serif;
-    /* --thm-primary: #e90b35; */
     --thm-primary: #dcb54e;
-    --thm-primary-rgb: 233, 11, 53;
+    --thm-primary-rgb: 220, 181, 78;
     --thm-white: #ffffff;
     --thm-white-rgb: 255, 255, 255;
-    --thm-black: #11161f;
-    --thm-black-rgb: 17, 22, 31;
-    --thm-gray: #767676;
-    --thm-gray-rgb: 118, 118, 118;
-    --thm-gray-bg: #f5f5f8;
-    --thm-gray-bg-rgb: 245, 245, 248;
+    --thm-black: #1a1a1a;
+    --thm-black-rgb: 26, 26, 26;
+    --thm-gray: #666666;
+    --thm-gray-rgb: 102, 102, 102;
+    --thm-gray-bg: #f8f9fa;
+    --thm-gray-bg-rgb: 248, 249, 250;
     --thm-font-size: 16px;
     --thm-font-weight: 400;
     --thm-white-bg: #ffffff;
     --thm-heading-font-weight: 700;
-    --thm-blue: #0d6efd;
-    --thm-indigo: #6610f2;
-    --thm-purple: #6f42c1;
-    --thm-pink: #d63384;
-    --thm-red: #dc3545;
-    --thm-orange: #fd7e14;
-    --thm-yellow: #ffc107;
-    --thm-green: #198754;
-    --thm-teal: #20c997;
-    --thm-cyan: #0dcaf0;
+    
+    /* Premium Design Tokens */
+    --thm-shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.05);
+    --thm-shadow-medium: 0 20px 40px rgba(0, 0, 0, 0.08);
+    --thm-shadow-large: 0 30px 60px rgba(0, 0, 0, 0.12);
+    --thm-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --thm-border-radius: 12px;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
     font-family: var(--thm-font);
     font-weight: var(--thm-font-weight);
     font-size: var(--thm-font-size);
-    line-height: 30px;
-    /* color: var(--thm-gray); */
+    line-height: 1.8;
+    color: var(--thm-gray);
     font-style: normal;
+    -webkit-font-smoothing: antialiased;
 }
 
 p {
-    font-size: var(--thm-font-size);
+    font-size: 16px;
     font-weight: var(--thm-font-weight);
-    line-height: 30px;
+    line-height: 1.8;
     color: var(--thm-gray);
     margin-bottom: 0;
-    font-family: 'Outfit', sans-serif;
 }
 
 
@@ -107,11 +107,7 @@ img,
 
 a,
 button {
-    -webkit-transition: all 0.3s ease-out 0s;
-    -moz-transition: all 0.3s ease-out 0s;
-    -ms-transition: all 0.3s ease-out 0s;
-    -o-transition: all 0.3s ease-out 0s;
-    transition: all 0.3s ease-out 0s;
+    transition: var(--thm-transition);
     text-decoration: none;
 }
 
@@ -322,22 +318,17 @@ h6 {
     display: inline-flex;
     align-items: center;
     overflow: hidden;
-    padding-top: 10px;
-    padding-left: 45px;
-    padding-right: 45px;
-    padding-bottom: 10px;
+    padding: 12px 35px;
     background-color: transparent;
     color: var(--thm-white);
     font-size: 14px;
-    line-height: 40px;
-    font-weight: 700;
+    line-height: normal;
+    font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.018em;
+    letter-spacing: 0.1em;
     font-family: var(--thm-font);
-    border-radius: 0px;
-    -webkit-transition: all 0.3s linear;
-    -o-transition: all 0.3s linear;
-    transition: all 0.3s linear;
+    border-radius: 6px;
+    transition: var(--thm-transition);
     z-index: 2;
 }
 
@@ -470,7 +461,9 @@ h6 {
     transition-delay: 0.1s;
 }
 
-.owl-carousel.owl-dot-style1 .owl-dots .owl-dot.active {}
+.owl-carousel.owl-dot-style1 .owl-dots .owl-dot.active {
+    display: none;
+}
 
 .owl-carousel.owl-dot-style1 .owl-dots .owl-dot::before {
     content: "";
@@ -3446,10 +3439,7 @@ Project Three Css
 
 #project-three__pagination .swiper-pagination-bullet {
     position: relative;
-    display: inline-block;
-    background: transparent;
-    width: 33.333%;
-    height: 2px;
+    display: block;
     float: left;
     background: transparent;
     border-radius: 0px;
@@ -5336,7 +5326,6 @@ Cart Page
     left: 0;
     width: 17px;
     height: 17px;
-    vertical-align: middle;
     border: 1px solid #d6d3d0;
     cursor: pointer;
     border-radius: 0%;
@@ -5851,11 +5840,17 @@ Project Four Css
 .feature {
     flex: 1 1 calc(33.333% - 30px);
     background-color: #fff;
-    border-radius: 8px;
+    border-radius: var(--thm-border-radius);
     text-align: center;
     padding: 30px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--thm-shadow-soft);
     gap: 5px;
+    transition: var(--thm-transition);
+}
+
+.feature:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--thm-shadow-medium);
 }
 
 .feature img {
@@ -5866,16 +5861,15 @@ Project Four Css
 
 .feature h3 {
     font-size: 18px;
-    color: gold;
+    color: var(--thm-primary);
     margin-bottom: 10px;
     font-family: var(--thm-font);
 }
 
 .feature p {
     font-size: 14px;
-    color: #555;
+    color: var(--thm-gray);
     line-height: 1.6;
-    font-family: 'Outfit', sans-serif;
 }
 
 /* Mobile Responsive */

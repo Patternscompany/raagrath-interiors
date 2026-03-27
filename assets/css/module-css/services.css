@@ -5,7 +5,7 @@
     position: relative;
     display: block;
     padding: 120px 0 90px;
-    background:black;
+    background: var(--thm-black);
     z-index: 1;
 }
 
@@ -210,11 +210,18 @@
     display: block;
     overflow: hidden;
     background: var(--thm-white);
-    box-shadow: 0px 4px 60px 0px rgba(21, 24, 32, 0.06);
+    box-shadow: var(--thm-shadow-soft);
+    border-radius: var(--thm-border-radius);
     padding: 60px 60px 60px;
     padding-right: 20px;
     margin-bottom: 30px;
+    transition: var(--thm-transition);
     z-index: 1;
+}
+
+.service-two__single:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--thm-shadow-medium);
 }
 
 .service-two__single .shape2 {

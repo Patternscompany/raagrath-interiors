@@ -359,18 +359,24 @@
     left: 0;
     width: 100%;
     margin: auto;
-    background: #080909;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
     -webkit-animation: 1000ms ease-in-out 0s normal none 1 running fadeInDown;
     animation: 1000ms ease-in-out 0s normal none 1 running fadeInDown;
-    -webkit-box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
-    box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
+    box-shadow: var(--thm-shadow-soft);
     border-radius: 0;
     z-index: 99;
     animation-name: menu_sticky;
     animation-duration: 0.60s;
     animation-timing-function: ease-out;
-    transition: all .25s ease-in-out;
+    transition: var(--thm-transition);
 }
+
+.sticky-menu .navbar-wrap ul li a {
+    color: var(--thm-white);
+}
+
 
 .sticky-menu .navbar-wrap ul li a {
     padding: 10px 0;
@@ -444,11 +450,13 @@
     position: relative;
     display: block;
     color: var(--thm-white);
-    font-size: 16px;
+    font-size: 15px;
     line-height: 24px;
     font-weight: 500;
-    text-transform: capitalize;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     font-family: var(--thm-font);
+    transition: var(--thm-transition);
     z-index: 1;
 }
 
@@ -503,22 +511,13 @@
     left: 0;
     right: 0;
     top: 100%;
-    min-width: 230px;
-    border: 0px solid #f5f5f5;
+    min-width: 250px;
     background: var(--thm-white);
-    margin: 0 0;
-    transform: scale(1, 0);
-    transform-origin: 0 0;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    -webkit-box-shadow: 0px 30px 70px 0px rgba(137, 139, 142, 0.15);
-    -moz-box-shadow: 0px 30px 70px 0px rgba(137, 139, 142, 0.15);
-    box-shadow: 0px 30px 70px 0px rgba(137, 139, 142, 0.15);
-    border-radius: 0;
-    padding: 0px 0;
+    transform: translateY(20px);
+    transition: var(--thm-transition);
+    box-shadow: var(--thm-shadow-medium);
+    border-radius: var(--thm-border-radius);
+    padding: 15px 0;
     display: block;
     visibility: hidden;
     opacity: 0;
@@ -528,7 +527,7 @@
 .navbar-wrap ul li:hover>.sub-menu {
     opacity: 1;
     visibility: visible;
-    transform: scale(1);
+    transform: translateY(0);
 }
 
 .navbar-wrap ul li .sub-menu .sub-menu {
