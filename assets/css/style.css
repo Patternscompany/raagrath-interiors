@@ -5632,6 +5632,10 @@ Project Four Css
     color: #dcb54e;
 }
 
+.page-header__inner h1 {
+    color: #fff;
+}
+
 .whatsapp {
     position: fixed;
     right: 12px;
@@ -5640,7 +5644,7 @@ Project Four Css
     display: grid;
     place-items: center;
     border-radius: 50px;
-    z-index: 10000;
+    z-index: 990;
     opacity: 1;
 
     background: rgb(37, 211, 102);
