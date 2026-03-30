@@ -255,7 +255,7 @@
     border-radius: 50%;
     border: 1px solid var(--thm-black);
     overflow: hidden;
-    background-color:var(--thm-black);
+    background-color: var(--thm-black);
 }
 
 .about-one__content-bottom-author-box .author-info .img-box img {
@@ -540,7 +540,7 @@
 .about-three__img1 {
     position: relative;
     display: block;
-    max-width: 390px;
+    /* max-width: 390px; */
     width: 100%;
 }
 
@@ -623,7 +623,7 @@
     display: block;
     margin-left: 40px;
     margin-top: 60px;
-    
+
 }
 
 .about-three__img2 ul {
@@ -673,7 +673,7 @@
     width: 100%;
     transition: .5s ease;
     transform: scale(1.05);
-    
+
 }
 
 .about-three__img2-single:hover img {
